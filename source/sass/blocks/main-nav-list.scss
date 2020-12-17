@@ -1,0 +1,17 @@
+.main-nav-list {
+  @include clear-lists-style;
+  display: flex;
+}
+
+.main-nav-list__item {
+  margin-right: 40px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  & a {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 500;
+  }
+}
