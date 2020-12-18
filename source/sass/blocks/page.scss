@@ -3,14 +3,13 @@
 }
 
 .page__body {
-  // font-family: @alternative-font;
-  // font-size: 14px;
-  // line-height: 18px;
-  // color: @special_dark-grey;
+  font-family: $default-font;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba($color: $layout-dark, $alpha: 0.7);
 
   min-height: 100%;
   margin: 0;
-  // background-color: @white;
 
   min-width: 300px;
 

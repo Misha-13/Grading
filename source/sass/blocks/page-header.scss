@@ -4,9 +4,9 @@
   justify-content: space-between;
   box-sizing: content-box;
 
-  padding-top: 39px;
+  padding-top: 37px;
   padding-bottom: 38px;
-  padding-right: 386px;
+  padding-right: 389px;
   padding-left: 375px;
 }
 
@@ -20,5 +20,16 @@
 
 .page-header__img {
   min-width: 57px;
-  min-height: 22px;
+  height: 22px;
 }
+
+.page-header__link {
+  color: $layout-dark--darker;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+// .page-header__link--tel {
+//   padding-left: 40px;
+// }
