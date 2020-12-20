@@ -1,0 +1,19 @@
+.common-slider {
+  width: 100%;
+  height: 100%;
+
+  @media (max-width: $mobile-width-only) {
+    height: 235px;
+  }
+}
+
+.common-slider__element {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.common-slider__element--active {
+  display: block;
+}

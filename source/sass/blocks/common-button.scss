@@ -1,0 +1,29 @@
+.common-button {
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  align-items: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+  background-color: $layout-red;
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    background-color: $layout-red--darker;
+  }
+
+  &:active {
+    background-color: rgba($color: $layout-red--darker, $alpha: 0.5);
+  }
+
+  @media (max-width: $desktop-width) {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 2px;
+  }
+}

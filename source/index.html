@@ -13,7 +13,7 @@
     </div>
     <div class="page-header__info-wrapper">
       <nav class="header-nav">
-        <ul class="main-nav-list">
+        <ul class="main-nav-list" style="display: none;">
           <li class="main-nav-list__item">
             <a class="main-nav-list__link" href="#tours">О путешествии</a>
           </li>
@@ -33,11 +33,17 @@
       </a>
     </div>
   </header>
-  <main style="background-color: blue;">
-    <section>
-      <h1>Путешествие по Европе</h1>
-      <p>В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
-      <a href="">Cмотреть тур</a>
+  <main>
+    <section class="top-info">
+      <div class="top-info__wrapper">
+        <h1 class="top-info__caption">Путешествие по Европе</h1>
+        <p class="top-info__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
+        <a class="top-info__button common-button" href="#tours">Cмотреть тур</a>
+      </div>
+      <div class="top-info__slider common-slider">
+        <img class="common-slider__element common-slider__element--active" src="img/top-image-1.jpg" alt="Картинка Европы">
+        <img class="common-slider__element" src="img/top-image-2.jpg" alt="Еще одна картинка Европы">
+      </div>
     </section>
     <section id="tours">
       <h2>Места посещения</h2>

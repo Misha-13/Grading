@@ -1,0 +1,117 @@
+.top-info {
+  position: relative;
+  width: 100%;
+  min-height: 860px;
+  color: $white;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 200px;
+
+  @media (max-width: $desktop-width) {
+    box-sizing: border-box;
+    min-height: 344px;
+    justify-content: center;
+    padding-top: 60px;
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 81px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 113px;
+  }
+}
+
+.top-info__slider {
+  z-index: -999;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.top-info__wrapper {
+  width: 410px;
+  position: absolute;
+  top: 185px;
+  right: 435px;
+
+  @media (max-width: $desktop-width) {
+    width: 400px;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.top-info__caption {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1px;
+  margin: 0;
+  margin-bottom: 29px;
+
+  @media (max-width: $desktop-width) {
+    width: 100%;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: normal;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    height: 72px;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 102px;
+  }
+}
+
+.top-info__text {
+  width: 376px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: -0.5px;
+  margin: 0;
+  margin-bottom: 34px;
+
+  @media (max-width: $desktop-width) {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    color: $black;
+    margin-bottom: 20px;
+  }
+}
+
+.top-info__button {
+  width: 340px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 40px;
+  padding-left: 40px;
+  background-image: url("../img/arrow-direction.svg");
+  background-repeat: no-repeat;
+  background-position: 88% 50%;
+
+  @media (max-width: $desktop-width) {
+    width: 250px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-right: 40px;
+    padding-left: 40px;
+    background-position: 83% 50%;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    background-position: 86% 50%;
+  }
+}
