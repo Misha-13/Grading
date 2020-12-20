@@ -1,0 +1,82 @@
+.tours {
+  display: flex;
+  flex-direction: column;
+  padding-right: 375px;
+  padding-left: 375px;
+
+  @media (max-width: $desktop-width) {
+    padding-right: 81px;
+    padding-left: 81px;
+    align-items: center;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.tours__caption {
+  width: 358px;
+  position: relative;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1.245px;
+  color: $layout-dark;
+  margin: 0;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 229px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: $layout-red;
+  }
+
+  @media (max-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: normal;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.tours__text {
+  width: 328px;
+  margin: 0;
+  margin-bottom: 56px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  color: rgba($layout-dark, 0.7);
+
+  @media (max-width: $desktop-width) {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

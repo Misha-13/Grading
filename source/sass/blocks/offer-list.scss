@@ -1,0 +1,88 @@
+.offer-list {
+  @include clear-lists-style;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.tours-list__element {
+  position: relative;
+  box-sizing: border-box;
+  width: 350px;
+  height: 430px;
+  margin-bottom: 101px;
+  text-align: center;
+  background-image: url("../img/greece-tours.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: center;
+
+  &:hover .tours-list__wrapper {
+    display: flex;
+  }
+
+  @media (max-width: $desktop-width) {
+    width: 288px;
+    height: 425px;
+  }
+}
+
+.tours-list__element--albania {
+  background-image: url("../img/albania.jpg");
+}
+
+.tours-list__element--macedonia {
+  background-image: url("../img/macedonia.jpg");
+}
+
+.tours-list__element--montenegro {
+  background-image: url("../img/montenegro.jpg");
+}
+
+.tours-list__element--croatia {
+  background-image: url("../img/croatia.jpg");
+}
+
+.tours-list__text {
+  min-width: 215px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.5px;
+  color: $layout-dark;
+  background-color: $white;
+  margin: 0;
+}
+
+.tours-list__wrapper {
+  display: none;
+  background-color: rgba($layout-dark--darker, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.tours-list__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-right: 25px;
+  padding-left: 25px;
+  border: 1px solid $white;
+}
