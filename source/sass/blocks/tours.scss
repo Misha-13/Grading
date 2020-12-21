@@ -3,6 +3,7 @@
   flex-direction: column;
   padding-right: 375px;
   padding-left: 375px;
+  margin-bottom: 97px;
 
   @media (max-width: $desktop-width) {
     padding-right: 81px;
@@ -26,7 +27,7 @@
   color: $layout-dark;
   margin: 0;
   margin-bottom: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
 
   &::after {
     content: "";

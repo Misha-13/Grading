@@ -1,0 +1,25 @@
+.features-list {
+  @include clear-lists-style;
+}
+
+.features-list__element {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: $layout-dark;
+  margin: 0;
+  padding-left: 30px;
+  margin-bottom: 15px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../img/red-mark.svg");
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 12px;
+  }
+}
