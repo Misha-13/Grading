@@ -13,7 +13,7 @@
     </div>
     <div class="page-header__info-wrapper">
       <nav class="header-nav">
-        <ul class="main-nav-list" style="display: none;">
+        <ul class="main-nav-list">
           <li class="main-nav-list__item">
             <a class="main-nav-list__link" href="#tours">О путешествии</a>
           </li>
@@ -110,7 +110,7 @@
             <a class="countries__link common-button" href="blank.html">Купить тур сейчас</a>
           </div>
           <div class="countries__photo-wrapper">
-            <img src="../img/greece-offer.jpg" width="430" height="596" alt="Греция">
+            <img class="countries__photo" src="../img/greece-countries.jpg" width="430" height="596" alt="Греция">
           </div>
           <div class="countries__feedback">
             <h3 class="countries__caption countries__caption--small">Отзывы</h3>
@@ -240,23 +240,28 @@
         </ul>
       </div>
     </section>
-    <section>
-      <h2>Обратная связь</h2>
-      <form action="https://echo.htmlacademy.ru" method="POST">
-        <p>У Вас остались вопросы?</p>
-        <p>Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-        <fieldset>
-          <p>
-            <label for="phone">Телефон</label>
-            <input id="phone" type="tel" placeholder="+7  Введите 10 цифр номера" required>
+    <section class="feedback">
+    <h2 class="visually-hidden">Обратная связь</h2>
+    <div class="feedback__image-wrapper">
+      <img class="feedback__image" src="img/sunset.jpg" alt="Закат" width="844" height="455">
+    </div>
+    <div class="feedback__wrapper">
+      <form class="feedback__form common-form" action="https://echo.htmlacademy.ru" method="POST">
+        <p class="common-form__text common-form__text--stress">У Вас остались вопросы?</p>
+        <p class="common-form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+        <fieldset class="common-form__fieldset">
+          <p class="common-form__wrapper">
+            <label class="visually-hidden" for="phone">Телефон</label>
+            <input class="common-form__input" id="phone" type="tel" placeholder="+7  Введите 10 цифр номера" required>
           </p>
-          <p>
-            <label for="mail">E-mail</label>
-            <input id="mail" type="email" placeholder="E-mail">
+          <p class="common-form__wrapper">
+            <label class="visually-hidden" for="mail">E-mail</label>
+            <input class="common-form__input" id="mail" type="email" placeholder="E-mail">
           </p>
-          <button type="submit">Отправить</button>
+          <button class="common-form__button common-button" type="submit">Отправить</button>
         </fieldset>
       </form>
+    </div>
     </section>
   </main>
   <footer class="page-footer">

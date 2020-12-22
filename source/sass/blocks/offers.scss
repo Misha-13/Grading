@@ -4,9 +4,24 @@
   background-image: url("../img/map.svg");
   background-repeat: no-repeat;
   background-position: center 25%;
+
+  @media (max-width: $desktop-width) {
+    padding: 0;
+    background-image: none;
+  }
 }
 
 .offers__nav {
   padding-right: 407px;
   padding-left: 138px;
+
+  @media (max-width: $desktop-width) {
+    padding: 0;
+
+    padding-left: 37px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding-left: 15px;
+  }
 }

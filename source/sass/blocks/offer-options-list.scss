@@ -1,9 +1,22 @@
 .offer-options-list {
   @include clear-lists-style;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   min-height: 672px;
   width: 770px;
+
+  @media (max-width: $desktop-width) {
+    width: 100%;
+    flex-wrap: wrap;
+    min-height: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 0;
+  }
 }
 
 .offer-options-list__element {
@@ -20,10 +33,22 @@
   border: 1px solid rgba($layout-dark, 0.3);
   box-sizing: border-box;
   border-radius: 6px;
+
+  @media (max-width: $desktop-width) {
+    max-width: 288px;
+    min-height: 629px;
+    padding: 0;
+    padding-top: 30px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 30px;
+  }
 }
 
 .offer-options-list__element--highlight {
-  border: 3px solid $layout-red;
+  border-color: $layout-red;
+  box-shadow: 0 0 3px $layout-red inset;
 
   & .offer-options-list__head-text {
     color: $layout-red;
@@ -44,12 +69,25 @@
   padding-bottom: 28px;
   border-bottom: 1px solid rgba($layout-dark, 0.5);
   margin-bottom: 15px;
+
+  @media (max-width: $desktop-width) {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .offer-options-list__head-wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+
+  @media (max-width: $desktop-width) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+  }
 }
 
 .offer-options-list__head-text {
@@ -59,6 +97,13 @@
   line-height: 38px;
   letter-spacing: -1.5px;
   color: rgba($layout-dark--darker, 0.7);
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 34px;
+  }
 }
 
 .offer-options-list__text {
@@ -69,12 +114,19 @@
   display: flex;
   align-items: center;
   color: $layout-dark;
+
+  @media (max-width: $desktop-width) {
+    text-align: center;
+  }
 }
 
 .offer-options-list__link {
-  /* align-self: flex-end;
-  justify-self: flex-end; */
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+
+  @media (max-width: $desktop-width) {
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
 }

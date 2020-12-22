@@ -1,5 +1,10 @@
 .features-list {
   @include clear-lists-style;
+
+  @media (max-width: $desktop-width) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
 .features-list__element {
@@ -21,5 +26,9 @@
     background-repeat: no-repeat;
     width: 14px;
     height: 12px;
+  }
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 10px;
   }
 }
